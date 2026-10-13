@@ -3,3 +3,22 @@ dist
 .env
 *.tfstate*
 .terraform
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+
+# Terraform generated files
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Private keys and logs
+*.pem
+*.log
+backend-error.txt
